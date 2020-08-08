@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if(id == R.id.menu_5){
                     Toast.makeText(context, title + ": 설정화면 입니다.", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                    Intent intent = new Intent(MainActivity.this, TempActivity.class);
                     startActivity(intent);
                 }
 
