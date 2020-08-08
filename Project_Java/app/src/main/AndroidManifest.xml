@@ -19,6 +19,8 @@
         </activity>
         <activity android:name=".MainActivity"/>
         <activity android:name=".TempActivity"/>
+        <activity android:name=".NewActivity"/>
+        <activity android:name=".Login_SelectActivity"/>
 
     </application>
 

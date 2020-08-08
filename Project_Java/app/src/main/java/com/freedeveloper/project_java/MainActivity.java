@@ -55,9 +55,9 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(context, title + ": 실시간화면 입니다.", Toast.LENGTH_SHORT).show();
                 }
                 else if(id == R.id.menu_5){
-                    Toast.makeText(context, title + ": 설정화면 입니다.", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, TempActivity.class);
                     startActivity(intent);
+                    finish();
                 }
 
                 return true;
@@ -74,5 +74,16 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private long time= 0;
+    @Override
+    public void onBackPressed(){
+        if(System.currentTimeMillis()-time>=2000){
+            time=System.currentTimeMillis();
+            Toast.makeText(getApplicationContext(),"뒤로 버튼을 한번 더 누르면 종료합니다.",Toast.LENGTH_SHORT).show();
+        }else if(System.currentTimeMillis()-time<2000){
+            finish();
+        }
     }
 }

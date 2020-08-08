@@ -8,19 +8,19 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class TempActivity extends AppCompatActivity {
+public class Login_SelectActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.temp);
+        setContentView(R.layout.activity_login_select);
 
-        Button back = findViewById(R.id.back);
+        Button Button_enter = findViewById(R.id.Button_enter);
 
-        back.setOnClickListener(new View.OnClickListener() {
+        Button_enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TempActivity.this, MainActivity.class);
+                Intent intent = new Intent(Login_SelectActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -30,7 +30,7 @@ public class TempActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){
-        Intent intent = new Intent(TempActivity.this, MainActivity.class);
+        Intent intent = new Intent(Login_SelectActivity.this, LoginActivity.class);
         startActivity(intent);
         finish();
     }

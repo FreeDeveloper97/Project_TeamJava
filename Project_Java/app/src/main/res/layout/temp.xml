@@ -4,12 +4,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="temp"
-        android:textSize="30dp"
+        android:orientation="vertical"
         android:gravity="center"
-        />
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="temp"
+            android:textSize="30dp"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="back"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            />
+
+    </LinearLayout>
 
 </RelativeLayout>

@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -21,16 +22,110 @@
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="50dp"
+            android:background="@android:color/white">
 
             <TextView
                 android:id="@+id/toolbar_title"
                 android:text="미세먼지를 JAVA"
+                android:textSize="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/higggothicssi_pro_60g"/>
+                android:fontFamily="@font/higggothicssi_pro_80g"/>
         </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingHorizontal="50dp"
+                >
+
+                <TextView
+                    android:id="@+id/TextView_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2020년 08월 08일"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/higggothicssi_pro_80g"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/TextView_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="오전 12:24"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/higggothicssi_pro_80g"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/TextView_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="양천구 목4동"
+                    android:textSize="35dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/higggothicssi_pro_99g"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/ImageView_status"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/bad"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/TextView_per"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="미세먼지 농도 43"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/higggothicssi_pro_80g"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/TextView_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="매우나쁨"
+                    android:textSize="40dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:fontFamily="@font/higggothicssi_pro_99g"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@drawable/test_graph"
+                    android:layout_marginTop="30dp"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
 
     </RelativeLayout>
 
