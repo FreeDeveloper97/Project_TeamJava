@@ -3,6 +3,18 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
+        android:font="@font/higggothicssi_pro_00g" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/higggothicssi_pro_20g" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/higggothicssi_pro_40g" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
         android:font="@font/higggothicssi_pro_60g" />
 
     <font
