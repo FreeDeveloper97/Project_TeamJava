@@ -52,7 +52,10 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(context, title + ": 즐겨찾기화면 입니다.", Toast.LENGTH_SHORT).show();
                 }
                 else if(id == R.id.menu_4){
-                    Toast.makeText(context, title + ": 실시간화면 입니다.", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(context, title + ": 실시간화면 입니다.", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, RealtimeActivity.class);
+                    startActivity(intent);
+                    finish();
                 }
                 else if(id == R.id.menu_5){
                     Intent intent = new Intent(MainActivity.this, TempActivity.class);
