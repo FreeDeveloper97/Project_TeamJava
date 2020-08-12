@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoadingActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,6 +22,7 @@
         <activity android:name=".TempActivity"/>
         <activity android:name=".NewActivity"/>
         <activity android:name=".Login_SelectActivity"/>
+        <activity android:name=".LoginActivity"/>
 
     </application>
 
