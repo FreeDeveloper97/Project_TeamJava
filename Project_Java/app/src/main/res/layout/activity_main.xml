@@ -45,51 +45,62 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:paddingHorizontal="50dp"
+                android:paddingHorizontal="20dp"
                 >
 
                 <TextView
                     android:id="@+id/TextView_day"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="2020년 08월 08일"
+                    android:text="0000년 00월 00일"
                     android:textSize="25dp"
                     android:textColor="@android:color/white"
                     android:fontFamily="@font/higggothicssi_pro_80g"
                     android:gravity="center"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
                     />
 
                 <TextView
                     android:id="@+id/TextView_time"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="오전 12:24"
+                    android:text="오전 00:00:00"
                     android:textSize="25dp"
                     android:textColor="@android:color/white"
                     android:fontFamily="@font/higggothicssi_pro_80g"
                     android:gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     />
 
                 <TextView
                     android:id="@+id/TextView_location"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="양천구 목4동"
+                    android:text="Seoul"
                     android:textSize="35dp"
                     android:textColor="@android:color/white"
-                    android:fontFamily="@font/higggothicssi_pro_99g"
+                    android:fontFamily="@font/higggothicssi_pro_80g"
                     android:gravity="center"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
                     />
 
                 <ImageView
                     android:id="@+id/ImageView_status"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/bad"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+
                     android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="미세먼지 농도"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/higggothicssi_pro_80g"
+                    android:gravity="center"
                     android:layout_marginTop="20dp"
                     />
 
@@ -97,31 +108,32 @@
                     android:id="@+id/TextView_per"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="미세먼지 농도 43"
-                    android:textSize="25dp"
-                    android:textColor="@android:color/white"
+                    android:text="로딩중"
+                    android:textSize="50dp"
+                    android:textColor="@android:color/black"
                     android:fontFamily="@font/higggothicssi_pro_80g"
                     android:gravity="center"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     />
 
                 <TextView
                     android:id="@+id/TextView_status"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="매우나쁨"
-                    android:textSize="40dp"
-                    android:textColor="@android:color/holo_red_dark"
+                    android:text="-"
+                    android:textSize="30dp"
+                    android:textColor="@android:color/white"
                     android:fontFamily="@font/higggothicssi_pro_99g"
                     android:gravity="center"
                     android:layout_marginTop="10dp"
                     />
 
-                <ImageView
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/linechart"
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:src="@drawable/test_graph"
-                    android:layout_marginTop="30dp"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
                     />
 
             </LinearLayout>

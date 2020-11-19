@@ -23,7 +23,7 @@ public class LoadingActivity extends Activity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(LoadingActivity.this,LoginActivity.class);
+                Intent intent = new Intent(LoadingActivity.this,Login_SelectActivity.class);
                 startActivity(intent);
                 finish();
             }
