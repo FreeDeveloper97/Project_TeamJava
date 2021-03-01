@@ -1,3 +1,0 @@
-include ':app'
-rootProject.name='Project_Java'
-include 'MPChartExample'
